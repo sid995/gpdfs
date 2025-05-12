@@ -11,4 +11,6 @@ type Peer interface{}
 // communication between peers in the network.
 // It is responsible for establishing connections, sending and
 // receiving messages, and managing the transport protocol.
-type Transport interface{}
+type Transport interface {
+	ListenAndAccept() error
+}
