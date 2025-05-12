@@ -14,4 +14,5 @@ func TestTCPTransport(t *testing.T) {
 
 	// server
 	assert.Nil(t, tr.ListenAndAccept(), "Expected no error when starting to listen")
+	select {}
 }
